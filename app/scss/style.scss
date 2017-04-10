@@ -1,5 +1,36 @@
+$font-stack: Myriad-set-pro_text, sans-serif;
+
+$primary-color-dark:   #512DA8;
+$primary-color:        #673AB7;
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #9E9E9E;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$main-bg: $accent-color;
+
+
+
 body {
   width: percentage(5/7);
-  background-color: lightgray;
-  font-family: 'Myriad-set-pro_text', sans-serif;
+  background-color: $main-bg;
+  font-family: $font-stack;
+  color: $primary-text-color;
+}
+
+.btn {
+  width: 170px;
+  height: 30px;
+  display: inline-block;
+  padding: 8px;
+  margin: 0 4px;
+  background-color: $primary-color;
+  float: left;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($primary-color-dark, 10);
+    color: lighten($secondary-text-color, 100);
+  }
 }

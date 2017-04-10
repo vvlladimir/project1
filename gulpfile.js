@@ -14,7 +14,7 @@ var runSequence = require('run-sequence');
 gulp.task('browserSync', function(){
   browserSync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: 'app'
     }
   })
 });
@@ -22,7 +22,7 @@ gulp.task('browserSync', function(){
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
