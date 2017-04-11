@@ -1,0 +1,13 @@
+@import "modules/variables";
+@import "modules/mixins";
+
+footer {
+  @extend section;
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
+  @include border-radius();
+  h1 {
+    font-size: 16px;
+    @include margin(null,16px,null,16px);
+  }
+}

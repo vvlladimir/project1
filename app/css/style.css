@@ -1,18 +1,84 @@
-body {
-  width: 71.42857%;
-  background-color: #9E9E9E;
-  font-family: Myriad-set-pro_text, sans-serif;
-  color: #212121; }
+nav#main-nav {
+  width: 100%;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  background-color: #673AB7;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  nav#main-nav li {
+    display: inline-block;
+    list-style: none; }
+    nav#main-nav li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 0 16px;
+      height: 40px;
+      display: block; }
+      nav#main-nav li a:hover {
+        background-color: #512DA8; }
+    nav#main-nav li.logo {
+      background-image: url(/images/logo-vt-gray.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      display: inline-block;
+      float: left;
+      width: 40px;
+      height: 40px; }
 
-.btn {
+body {
+  width: 960px;
+  background-color: #BDBDBD;
+  font-family: Myriad-set-pro_text, sans-serif;
+  color: #212121;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto; }
+
+section, footer {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #BDBDBD; }
+
+footer {
+  background-color: #512DA8;
+  color: #FFFFFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  footer h1 {
+    font-size: 16px;
+    margin-left: 16px;
+    margin-right: 16px; }
+
+.btn, .btn-icon {
   width: 170px;
   height: 30px;
   display: inline-block;
   padding: 8px;
-  margin: 0 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   background-color: #673AB7;
   float: left;
-  cursor: pointer; }
-  .btn:hover {
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center; }
+  .btn.btn-action, .btn-action.btn-icon {
+    background-color: #D1C4E9;
+    border: 1px solid #000;
+    margin-left: 40px; }
+  .btn:hover, .btn-icon:hover {
     background-color: #3e2280;
     color: white; }
+
+.btn-icon {
+  padding-left: 140px; }

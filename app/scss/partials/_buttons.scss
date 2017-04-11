@@ -1,0 +1,29 @@
+@import "modules/variables";
+@import "modules/mixins";
+
+.btn {
+  width: 170px;
+  height: 30px;
+  display: inline-block;
+  padding: 8px;
+  @include border-radius();
+  background-color: $primary-color;
+  float: left;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+    &.btn-action {
+      background-color: $primary-color-light;
+      border: 1px solid #000;
+      @include margin(null, null, null, 40px);
+    }
+    &:hover {
+      background-color: darken($primary-color-dark, 10);
+      color: lighten($secondary-text-color, 100);
+    }
+}
+
+.btn-icon {
+  @extend .btn;
+  padding-left: 140px;
+}
