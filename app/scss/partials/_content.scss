@@ -1,6 +1,3 @@
-@import "modules/variables";
-@import "modules/mixins";
-
 body {
   width: 960px;
   background-color: $divider-color;
@@ -15,4 +12,14 @@ section {
   width: 100%;
   height: auto;
   border-bottom: 1px solid $divider-color;
+}
+
+
+
+@media (max-width: $breakpoint-960) {
+  body {
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
 }

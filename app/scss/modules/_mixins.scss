@@ -10,3 +10,12 @@
   margin-bottom: $margin-bottom;
   margin-right: $margin-right;
 }
+@mixin bgImg($imgPath, $bgSize, $imgW, $imgH, $bgPos) {
+      background-image: url($imgPath);
+      background-position: $bgPos;
+      background-repeat: no-repeat;
+      background-size: $bgSize;
+      width: $imgW;
+      height: $imgH;
+      float: left;
+}

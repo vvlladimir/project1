@@ -1,6 +1,3 @@
-@import "modules/variables";
-@import "modules/mixins";
-
 .btn {
   width: 170px;
   height: 30px;
@@ -25,5 +22,6 @@
 
 .btn-icon {
   @extend .btn;
-  padding-left: 140px;
+  padding-left: 50px;
+  @include bgImg('/images/money-bag.png', 24px, 140px, 30px, 16px center);
 }

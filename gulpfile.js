@@ -72,6 +72,11 @@ gulp.task('clean:dist', function(){
 });
 
 //Build Sequences
+//We've also built a second task, build,
+//that creates a dist folder for the production website.
+//We compiled Sass into CSS, optimized all our assets,
+//and copied the necessary folders into the dist folder.
+//To run this task, we just have to type gulp build into the command line.
 gulp.task('default', function(callback){
   runSequence(['sass','browserSync'], 'watch', callback)
 });
